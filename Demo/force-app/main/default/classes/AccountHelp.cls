@@ -32,4 +32,7 @@ public class AccountHelp {
         return sum;
         
     }
+public static void createCaseRecord(List<Account> accountList){
+        List<Case> caseList = new List <Case>();
+        for(Account acc : accountList){
 }
