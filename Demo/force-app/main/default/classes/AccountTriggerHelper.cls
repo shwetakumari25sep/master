@@ -88,7 +88,5 @@ Public class AccountTriggerHelper {
             insert caseList;
         }
     } 
-    public static void createCaseRecord(List<Account> accountList){
-        List<Case> caseList = new List <Case>();
-        for(Account acc : accountList)
+
 }
