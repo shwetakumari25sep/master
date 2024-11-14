@@ -1,5 +1,5 @@
 trigger AccountTrigger on Account(before insert , after insert,after update,before update){
-    if(Trigger.isBefore && Trigger.isInsert){ 
+    if(Trigger.isBefore && Trigger.isInsert){
     	AccountTriggerHelper.updateAccountRecord(Trigger.new);
     }
     if(Trigger.isAfter && Trigger.isInsert){
@@ -16,5 +16,9 @@ trigger AccountTrigger on Account(before insert , after insert,after update,befo
     if(Trigger.isBefore && Trigger.isupdate){
        AccountTriggerHelper.updateAccountRecord1(Trigger.new,Trigger.oldMap);
     } 
+
+if(Trigger.isBefore && Trigger.isupdate){
+       AccountTriggerHelper.updateAccountRecord1(Trigger.new,Trigger.oldMap);
+    }
    
 }
