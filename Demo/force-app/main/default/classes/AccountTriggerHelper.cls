@@ -91,6 +91,5 @@ Public class AccountTriggerHelper {
     case cas = new Case();
     cas.AccountId = acc.Id;
     cas.Origin = 'Phone';
-    cas.OwnerId = us.Id;
-    CaseList.add(cas); 
+    
 }
